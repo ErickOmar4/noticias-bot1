@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap';
+@import 'tailwindcss';
+
+:root {
+  /* Backgrounds */
+  --bg:       #0d1117;
+  --surface:  #161b22;
+  --card:     #1c2128;
+  --card-hover: #22272e;
+
+  /* Borders */
+  --border:      rgba(255,255,255,0.09);
+  --border-soft: rgba(255,255,255,0.06);
+
+  /* Accent — steel blue, muted */
+  --accent:       #4a8ed4;
+  --accent-light: #6aaae0;
+  --accent-glow:  rgba(74,142,212,0.18);
+  --accent-dim:   rgba(74,142,212,0.12);
+
+  /* Text */
+  --text-primary: #e2e8f0;
+  --text-muted:   #8b949e;
+  --text-dim:     #4a5568;
+
+  /* Semantic */
+  --green:    #3fb950;
+  --green-bg: rgba(63,185,80,0.1);
+  --red:      #e05c5c;
+  --red-bg:   rgba(224,92,92,0.1);
+  --yellow:   #c8943a;
+  --yellow-bg:rgba(200,148,58,0.1);
+  --blue:     #4a8ed4;
+
+  /* Fonts */
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Layout */
+  --sidebar-w: 240px;
+  --sidebar-collapsed: 60px;
+  --navbar-h: 60px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); background: var(--bg); color: var(--text-primary); }
+
+input, select, textarea, button { font-family: var(--font-body); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
